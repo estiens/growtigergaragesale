@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 </head>
 <body>
     <header>
         <div class="container header-content">
             <div class="header-left">
-                <img src="/images/tiger.png" alt="Growltiger" class="header-tiger">
+                <img src="{{ "images/tiger.png" | relURL }}" alt="Growltiger" class="header-tiger">
             </div>
             <div class="header-text">
-                <h1><a href="/">{{ .Site.Title }}</a></h1>
+                <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
                 <p class="subtitle">{{ .Site.Params.subtitle }}</p>
                 <p class="tagline">First dibs for friends before public listings!</p>
                 <nav>
-                    <a href="/">Home</a>
-                    <a href="/items/">All Items</a>
-                    <a href="/books/">Books</a>
+                    <a href="{{ .Site.BaseURL }}">Home</a>
+                    <a href="{{ "items/" | relURL }}">All Items</a>
+                    <a href="{{ "books/" | relURL }}">Books</a>
                 </nav>
             </div>
         </div>
