@@ -1,0 +1,66 @@
+{{ define "main" }}
+<div class="items-list-page">
+    <h1>All Items for Sale</h1>
+    <p class="page-intro">Browse all {{ len .Pages }} items or filter by category below.</p>
+
+    <div class="filter-section">
+        <label>Filter items:</label>
+        <div class="filter-tags">
+            <button class="filter-btn active" data-filter="all">All Items</button>
+            <button class="filter-btn" data-filter="high">High Priority</button>
+            <button class="filter-btn" data-filter="medium">Medium Priority</button>
+            <button class="filter-btn" data-filter="can-ship">Can Ship</button>
+            <button class="filter-btn" data-filter="local">Local Only</button>
+        </div>
+    </div>
+
+    <div class="items-grid" id="items-grid">
+        {{ range .Pages }}
+        <div class="item-card" data-priority="{{ .Params.priority }}" data-shipping="{{ if .Params.shipping }}yes{{ else }}no{{ end }}" data-local="{{ if .Params.local_only }}yes{{ else }}no{{ end }}">
+            {{ if .Params.image }}
+            <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy">
+            {{ else }}
+            <div class="item-placeholder">[Photo Coming]</div>
+            {{ end }}
+            <div class="item-content">
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <p class="price">{{ .Params.price }}</p>
+                <p class="description">{{ .Params.short_description | default .Summary }}</p>
+                <div class="item-meta">
+                    {{ if .Params.shipping }}<span class="badge shipping">Ships</span>{{ end }}
+                    {{ if .Params.local_only }}<span class="badge local">Local Only</span>{{ end }}
+                    <span class="category">{{ .Params.category }}</span>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+<script>
+// Filter functionality
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        const filter = this.dataset.filter;
+        document.querySelectorAll('.item-card').forEach(card => {
+            let show = true;
+
+            if (filter === 'high') {
+                show = card.dataset.priority === 'high';
+            } else if (filter === 'medium') {
+                show = card.dataset.priority === 'medium';
+            } else if (filter === 'can-ship') {
+                show = card.dataset.shipping === 'yes';
+            } else if (filter === 'local') {
+                show = card.dataset.local === 'yes';
+            }
+
+            card.style.display = show ? 'block' : 'none';
+        });
+    });
+});
+</script>
+{{ end }}

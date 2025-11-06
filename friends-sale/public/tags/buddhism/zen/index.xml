@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Buddhism/Zen on Growltiger&#39;s Bad Ass Garage Sale</title>
+    <link>//localhost:1313/tags/buddhism/zen/</link>
+    <description>Recent content in Buddhism/Zen on Growltiger&#39;s Bad Ass Garage Sale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/tags/buddhism/zen/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Warm Smiles from Cold Mountains</title>
+      <link>//localhost:1313/books/339_warm_smiles_from_cold_mountains/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/339_warm_smiles_from_cold_mountains/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zen Master Raven</title>
+      <link>//localhost:1313/books/347_zen_master_raven/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/347_zen_master_raven/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Returning to Silence</title>
+      <link>//localhost:1313/books/372_returning_to_silence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/372_returning_to_silence/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

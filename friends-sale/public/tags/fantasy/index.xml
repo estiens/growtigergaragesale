@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fantasy on Growltiger&#39;s Bad Ass Garage Sale</title>
+    <link>//localhost:1313/tags/fantasy/</link>
+    <description>Recent content in Fantasy on Growltiger&#39;s Bad Ass Garage Sale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/tags/fantasy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Magicians</title>
+      <link>//localhost:1313/books/006_the_magicians/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/006_the_magicians/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>City of Saints and Madmen</title>
+      <link>//localhost:1313/books/037_city_of_saints_and_madmen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/037_city_of_saints_and_madmen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The Golden Compass</title>
+      <link>//localhost:1313/books/046_the_golden_compass/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/046_the_golden_compass/</guid>
+      <description>&lt;p&gt;His Dark Materials Book I&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Subtle Knife</title>
+      <link>//localhost:1313/books/047_the_subtle_knife/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/047_the_subtle_knife/</guid>
+      <description>&lt;p&gt;His Dark Materials Book II&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Jonathan Strange &amp; Mr Norrell</title>
+      <link>//localhost:1313/books/050_jonathan_strange_mr_norrell/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/050_jonathan_strange_mr_norrell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The Amber Spyglass</title>
+      <link>//localhost:1313/books/052_the_amber_spyglass/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/052_the_amber_spyglass/</guid>
+      <description>&lt;p&gt;His Dark Materials Book III&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Forests of the Heart</title>
+      <link>//localhost:1313/books/054_forests_of_the_heart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/054_forests_of_the_heart/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The Lord of the Rings</title>
+      <link>//localhost:1313/books/154_the_lord_of_the_rings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/154_the_lord_of_the_rings/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Wizard of Earthsea</title>
+      <link>//localhost:1313/books/157_a_wizard_of_earthsea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/157_a_wizard_of_earthsea/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Buddhism/Meditation on Growltiger&#39;s Bad Ass Garage Sale</title>
+    <link>//localhost:1313/tags/buddhism/meditation/</link>
+    <description>Recent content in Buddhism/Meditation on Growltiger&#39;s Bad Ass Garage Sale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/tags/buddhism/meditation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instinct for Freedom</title>
+      <link>//localhost:1313/books/363_instinct_for_freedom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/363_instinct_for_freedom/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Path With Heart</title>
+      <link>//localhost:1313/books/377_a_path_with_heart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/377_a_path_with_heart/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

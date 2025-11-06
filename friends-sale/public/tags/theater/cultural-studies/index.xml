@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Theater/Cultural Studies on Growltiger&#39;s Bad Ass Garage Sale</title>
+    <link>//localhost:1313/tags/theater/cultural-studies/</link>
+    <description>Recent content in Theater/Cultural Studies on Growltiger&#39;s Bad Ass Garage Sale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/tags/theater/cultural-studies/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Playwright&#39;s Voice</title>
+      <link>//localhost:1313/books/354_the_playwrights_voice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/354_the_playwrights_voice/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

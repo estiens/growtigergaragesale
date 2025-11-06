@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Non-Fiction/Design on Growltiger&#39;s Bad Ass Garage Sale</title>
+    <link>//localhost:1313/tags/non-fiction/design/</link>
+    <description>Recent content in Non-Fiction/Design on Growltiger&#39;s Bad Ass Garage Sale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/tags/non-fiction/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Visual Explanations</title>
+      <link>//localhost:1313/books/181_visual_explanations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/181_visual_explanations/</guid>
+      <description>&lt;p&gt;2nd edition - good condition&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Envisioning Information</title>
+      <link>//localhost:1313/books/190_envisioning_information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/190_envisioning_information/</guid>
+      <description>&lt;p&gt;Likely 1st ed - ex-library no DJ - great condition&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Visual Display of Quantitative Information</title>
+      <link>//localhost:1313/books/193_the_visual_display_of_quantitative_information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/193_the_visual_display_of_quantitative_information/</guid>
+      <description>&lt;p&gt;2nd edition - great condition&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

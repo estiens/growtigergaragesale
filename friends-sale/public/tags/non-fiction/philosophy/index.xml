@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Non-Fiction/Philosophy on Growltiger&#39;s Bad Ass Garage Sale</title>
+    <link>//localhost:1313/tags/non-fiction/philosophy/</link>
+    <description>Recent content in Non-Fiction/Philosophy on Growltiger&#39;s Bad Ass Garage Sale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/tags/non-fiction/philosophy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>No Boundary</title>
+      <link>//localhost:1313/books/088_no_boundary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/088_no_boundary/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Up From Eden</title>
+      <link>//localhost:1313/books/100_up_from_eden/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/100_up_from_eden/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wittgenstein&#39;s Poker</title>
+      <link>//localhost:1313/books/158_wittgensteins_poker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/158_wittgensteins_poker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>This Is Water</title>
+      <link>//localhost:1313/books/179_this_is_water/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/179_this_is_water/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lacan for Beginners</title>
+      <link>//localhost:1313/books/185_lacan_for_beginners/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/185_lacan_for_beginners/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>A Brief History of Everything</title>
+      <link>//localhost:1313/books/203_a_brief_history_of_everything/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/203_a_brief_history_of_everything/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

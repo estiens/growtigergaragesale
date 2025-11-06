@@ -1,0 +1,16 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = "Growltiger's Bad Ass Garage Sale"
+
+[params]
+  description = 'First dibs for friends before public listings!'
+  subtitle = 'Tiger goes to Asia to sit and look at the wall edition'
+  venmo = '@Eric-Stiens'
+  venmo_url = 'Eric-Stiens'
+  paypal = 'estiens@gmail.com'
+  paypal_url = 'estiens'
+  email = 'estiens@gmail.com'
+
+[outputs]
+  home = ["HTML", "JSON"]
+  section = ["HTML", "JSON"]

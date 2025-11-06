@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Non-Fiction/Travel on Growltiger&#39;s Bad Ass Garage Sale</title>
+    <link>//localhost:1313/tags/non-fiction/travel/</link>
+    <description>Recent content in Non-Fiction/Travel on Growltiger&#39;s Bad Ass Garage Sale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/tags/non-fiction/travel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Epic Hikes of the World</title>
+      <link>//localhost:1313/books/173_epic_hikes_of_the_world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/173_epic_hikes_of_the_world/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bones of the Master</title>
+      <link>//localhost:1313/books/198_bones_of_the_master/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/198_bones_of_the_master/</guid>
+      <description>&lt;p&gt;Journey to Secret Mongolia&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

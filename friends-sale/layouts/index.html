@@ -1,0 +1,95 @@
+{{ define "main" }}
+<div class="hero">
+    <h2>Hey friends!</h2>
+    <p>Getting rid of a bunch of great stuff to fund cyberpunk warrior-monk training. You get first dibs before I list these - prices negotiable.</p>
+    <p>I will cry with every book and there are still shelves and boxes to catalog so buy a lot, 500 tiems is a lot of tears.</p>
+    <p><strong>How it works:</strong> Browse below, text or <a href="mailto:{{ .Site.Params.email }}">email me</a> what you want. Venmo or PayPal works great, or we'll figure out pickup/shipping.</p>
+    <div class="hero-payment">
+        <span><strong>Email:</strong> <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></span>
+        <span><strong>Venmo:</strong> <a href="https://venmo.com/{{ .Site.Params.venmo_url }}" target="_blank">{{ .Site.Params.venmo }}</a></span>
+        <span><strong>PayPal:</strong> <a href="https://paypal.me/{{ .Site.Params.paypal_url }}" target="_blank">{{ .Site.Params.paypal }}</a></span>
+    </div>
+</div>
+
+<section class="items-section">
+    <h2>Items for Sale</h2>
+    <p class="section-description"><span id="item-count">{{ len (where .Site.RegularPages "Section" "items") }}</span> items available</p>
+
+    <div class="filter-section">
+        <label>Filter by category:</label>
+        <div class="filter-tags" id="category-filters">
+            <button class="filter-btn active" data-filter="all">All Items</button>
+            {{ $categories := slice }}
+            {{ range where .Site.RegularPages "Section" "items" }}
+                {{ if .Params.category }}
+                    {{ $categories = $categories | append .Params.category }}
+                {{ end }}
+            {{ end }}
+            {{ range sort (uniq $categories) }}
+                <button class="filter-btn" data-filter="{{ . | lower }}">{{ . }}</button>
+            {{ end }}
+        </div>
+    </div>
+
+    <div class="items-grid" id="items-grid">
+        {{ range where .Site.RegularPages "Section" "items" }}
+        <div class="item-card" data-category="{{ .Params.category | lower }}">
+            {{ if .Params.image }}
+            <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy">
+            {{ else }}
+            <div class="item-placeholder">[Photo Coming]</div>
+            {{ end }}
+            <div class="item-content">
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                <p class="price">{{ .Params.price }}</p>
+                <p class="description">{{ .Params.short_description | default .Summary }}</p>
+                <div class="item-meta">
+                    {{ if .Params.shipping }}<span class="badge shipping">Ships</span>{{ end }}
+                    {{ if .Params.local_only }}<span class="badge local">Local Only</span>{{ end }}
+                    <span class="badge category">{{ .Params.category }}</span>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>
+
+<script>
+// Category filtering for items
+const itemCards = document.querySelectorAll('.item-card');
+const filterBtns = document.querySelectorAll('#category-filters .filter-btn');
+const itemCount = document.getElementById('item-count');
+
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+        // Update active state
+        filterBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        const filter = this.dataset.filter;
+        let visibleCount = 0;
+
+        // Filter items
+        itemCards.forEach(card => {
+            const category = card.dataset.category;
+            if (filter === 'all' || category === filter) {
+                card.style.display = 'block';
+                visibleCount++;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        // Update count
+        itemCount.textContent = visibleCount;
+    });
+});
+</script>
+
+<section class="books-section">
+    <h2>Books (~405 titles)</h2>
+    <p class="section-description">Searchable book collection</p>
+    <a href="/books/" class="btn-primary">Browse Books →</a>
+</section>
+
+{{ end }}

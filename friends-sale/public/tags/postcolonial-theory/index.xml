@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Postcolonial Theory on Growltiger&#39;s Bad Ass Garage Sale</title>
+    <link>//localhost:1313/tags/postcolonial-theory/</link>
+    <description>Recent content in Postcolonial Theory on Growltiger&#39;s Bad Ass Garage Sale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/tags/postcolonial-theory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Postcolonial Discourses</title>
+      <link>//localhost:1313/books/259_postcolonial_discourses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/259_postcolonial_discourses/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The Wretched of the Earth</title>
+      <link>//localhost:1313/books/292_the_wretched_of_the_earth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/292_the_wretched_of_the_earth/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

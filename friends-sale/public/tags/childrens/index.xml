@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Children&#39;s on Growltiger&#39;s Bad Ass Garage Sale</title>
+    <link>//localhost:1313/tags/childrens/</link>
+    <description>Recent content in Children&#39;s on Growltiger&#39;s Bad Ass Garage Sale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/tags/childrens/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Little Prince</title>
+      <link>//localhost:1313/books/026_the_little_prince/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/026_the_little_prince/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>How the Grinch Stole Christmas</title>
+      <link>//localhost:1313/books/171_how_the_grinch_stole_christmas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/171_how_the_grinch_stole_christmas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>One Fish Two Fish Red Fish Blue Fish</title>
+      <link>//localhost:1313/books/174_one_fish_two_fish_red_fish_blue_fish/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/174_one_fish_two_fish_red_fish_blue_fish/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Your Favorite Seuss</title>
+      <link>//localhost:1313/books/176_your_favorite_seuss/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/176_your_favorite_seuss/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Roald Dahl&#39;s Revolting Rhymes</title>
+      <link>//localhost:1313/books/300_roald_dahls_revolting_rhymes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/300_roald_dahls_revolting_rhymes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The Little Prince (Greek)</title>
+      <link>//localhost:1313/books/397_the_little_prince_greek/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/397_the_little_prince_greek/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>The Giving Tree (Greek)</title>
+      <link>//localhost:1313/books/400_the_giving_tree_greek/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/books/400_the_giving_tree_greek/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

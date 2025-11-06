@@ -1,0 +1,171 @@
+{{ define "main" }}
+<div class="books-page">
+    <h1>Books for Sale</h1>
+    <p class="page-intro"><span id="book-count">{{ len (where .Pages "Params.sold" "ne" true) }}</span> books available. Search or browse below.</p>
+
+    <div class="search-box">
+        <input type="text" id="book-search" placeholder="Search by title or author..." autocomplete="off" />
+        <div id="search-results" class="search-dropdown" style="display: none;"></div>
+    </div>
+
+    <div class="filter-section">
+        <label>Filter by category:</label>
+        <div class="filter-tags" id="category-filters">
+            <button class="filter-btn active" data-filter="all">All Books</button>
+            {{ $categories := slice }}
+            {{ range .Pages }}
+                {{ if and (not .Params.sold) (not .Params.pending) }}
+                    {{ if .Params.category }}
+                        {{ $categories = $categories | append .Params.category }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+            {{ range sort (uniq $categories) }}
+                <button class="filter-btn" data-filter="{{ . | lower }}">{{ . }}</button>
+            {{ end }}
+        </div>
+    </div>
+
+    <div id="books-list" class="books-grid">
+        {{ range .Pages }}
+        {{ if and (not .Params.sold) (not .Params.pending) }}
+        <div class="book-card" data-title="{{ .Title | lower }}" data-author="{{ .Params.author | lower }}" data-category="{{ .Params.category | lower }}" data-tags="{{ .Params.tags | lower }}">
+            <div class="book-content">
+                <h3>{{ .Title }}</h3>
+                {{ if .Params.author }}<p class="author">by {{ .Params.author }}</p>{{ end }}
+                <div class="book-meta">
+                    {{ if .Params.tags }}<span class="tags-display">{{ .Params.tags }}</span>{{ end }}
+                    {{ if .Params.price }}<span class="book-price">{{ .Params.price }}</span>{{ end }}
+                </div>
+                {{ if .Content }}
+                <p class="book-notes">{{ .Content }}</p>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+
+    <p class="books-note" id="no-results" style="display: none;">No books found matching your search.</p>
+</div>
+
+<script>
+// Typeahead search functionality
+const searchInput = document.getElementById('book-search');
+const searchResults = document.getElementById('search-results');
+const allCards = document.querySelectorAll('.book-card');
+const noResults = document.getElementById('no-results');
+let currentFilter = 'all';
+
+// Build search index
+const searchIndex = Array.from(allCards).map(card => ({
+    title: card.dataset.title,
+    author: card.dataset.author,
+    category: card.dataset.category,
+    tags: card.dataset.tags,
+    element: card
+}));
+
+// Live search with typeahead
+searchInput.addEventListener('input', function(e) {
+    const query = e.target.value.toLowerCase().trim();
+
+    if (query.length === 0) {
+        searchResults.style.display = 'none';
+        filterBooks('', currentFilter);
+        return;
+    }
+
+    // Find matches (search title, author, and tags)
+    const matches = searchIndex.filter(item =>
+        item.title.includes(query) ||
+        item.author.includes(query) ||
+        item.tags.includes(query)
+    ).slice(0, 8); // Show top 8 results
+
+    // Show typeahead dropdown
+    if (matches.length > 0) {
+        searchResults.innerHTML = matches.map(match => {
+            const displayTitle = match.title.charAt(0).toUpperCase() + match.title.slice(1);
+            const displayAuthor = match.author.charAt(0).toUpperCase() + match.author.slice(1);
+            return `<div class="search-result-item" data-title="${match.title}">
+                <strong>${displayTitle}</strong>
+                <span class="search-author">by ${displayAuthor}</span>
+            </div>`;
+        }).join('');
+        searchResults.style.display = 'block';
+    } else {
+        searchResults.style.display = 'none';
+    }
+
+    // Filter visible books
+    filterBooks(query, currentFilter);
+});
+
+// Handle typeahead clicks
+searchResults.addEventListener('click', function(e) {
+    const item = e.target.closest('.search-result-item');
+    if (item) {
+        const title = item.dataset.title;
+        // Scroll to the book
+        const card = Array.from(allCards).find(c => c.dataset.title === title);
+        if (card) {
+            card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            card.style.background = 'var(--gray-100)';
+            setTimeout(() => { card.style.background = ''; }, 2000);
+        }
+        searchResults.style.display = 'none';
+    }
+});
+
+// Close typeahead when clicking outside
+document.addEventListener('click', function(e) {
+    if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
+        searchResults.style.display = 'none';
+    }
+});
+
+// Filter books based on search and category
+function filterBooks(searchQuery, categoryFilter) {
+    let visibleCount = 0;
+
+    allCards.forEach(card => {
+        const title = card.dataset.title;
+        const author = card.dataset.author;
+        const category = card.dataset.category;
+        const tags = card.dataset.tags;
+
+        const matchesSearch = searchQuery === '' ||
+            title.includes(searchQuery) ||
+            author.includes(searchQuery) ||
+            tags.includes(searchQuery);
+
+        const matchesCategory = categoryFilter === 'all' ||
+            category.toLowerCase().includes(categoryFilter);
+
+        if (matchesSearch && matchesCategory) {
+            card.style.display = 'block';
+            visibleCount++;
+        } else {
+            card.style.display = 'none';
+        }
+    });
+
+    // Update count and show/hide no results message
+    document.getElementById('book-count').textContent = visibleCount;
+    noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+}
+
+// Category filter buttons
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        currentFilter = this.dataset.filter;
+        const searchQuery = searchInput.value.toLowerCase().trim();
+        filterBooks(searchQuery, currentFilter);
+    });
+});
+</script>
+{{ end }}

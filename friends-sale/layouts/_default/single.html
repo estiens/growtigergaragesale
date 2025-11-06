@@ -1,0 +1,68 @@
+{{ define "main" }}
+<article class="item-detail">
+    <div class="item-header">
+        <h1>{{ .Title }}</h1>
+        <p class="price-big">{{ .Params.price }}</p>
+    </div>
+
+    {{ if .Params.images }}
+    <div class="item-images-gallery">
+        <div class="main-image">
+            <img id="mainImage" src="{{ index .Params.images 0 }}" alt="{{ .Title }}">
+        </div>
+        {{ if gt (len .Params.images) 1 }}
+        <div class="thumbnail-grid">
+            {{ range $index, $img := .Params.images }}
+            <div class="thumbnail {{ if eq $index 0 }}active{{ end }}" onclick="changeImage('{{ $img }}', this)">
+                <img src="{{ $img }}" alt="{{ $.Title }} - Image {{ add $index 1 }}">
+            </div>
+            {{ end }}
+        </div>
+        <script>
+        function changeImage(src, element) {
+            document.getElementById('mainImage').src = src;
+            document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+            element.classList.add('active');
+        }
+        </script>
+        {{ end }}
+    </div>
+    {{ else if .Params.image }}
+    <div class="item-image">
+        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+    </div>
+    {{ end }}
+
+    <div class="item-badges">
+        {{ if .Params.shipping }}
+        <span class="badge shipping">Can Ship</span>
+        {{ end }}
+        {{ if .Params.local_only }}
+        <span class="badge local">Local Pickup Only</span>
+        {{ end }}
+        {{ if .Params.category }}
+        <span class="badge category">{{ .Params.category }}</span>
+        {{ end }}
+    </div>
+
+    {{ if .Content }}
+    <div class="item-body">
+        {{ .Content }}
+    </div>
+    {{ end }}
+
+    {{ if .Params.additional_details }}
+    <div class="item-additional">
+        <h3>Details</h3>
+        <div>{{ .Params.additional_details | markdownify }}</div>
+    </div>
+    {{ end }}
+
+    <div class="item-cta">
+        <a href="/" class="btn-secondary">← Back to all items</a>
+        <div class="contact-info">
+            <p><strong>Want this?</strong> Text or email me to claim it!</p>
+        </div>
+    </div>
+</article>
+{{ end }}

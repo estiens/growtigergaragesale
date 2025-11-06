@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="header-left">
+                <img src="/images/tiger.png" alt="Growltiger" class="header-tiger">
+            </div>
+            <div class="header-text">
+                <h1><a href="/">{{ .Site.Title }}</a></h1>
+                <p class="subtitle">{{ .Site.Params.subtitle }}</p>
+                <p class="tagline">First dibs for friends before public listings!</p>
+                <nav>
+                    <a href="/">Home</a>
+                    <a href="/items/">All Items</a>
+                    <a href="/books/">Books</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><strong>Contact me to claim items!</strong> Text, <a href="mailto:{{ .Site.Params.email }}">email</a>, or just send payment.</p>
+            <div class="payment-info">
+                <div class="payment-method">
+                    <strong>Email:</strong> <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+                </div>
+                <div class="payment-method">
+                    <strong>Venmo:</strong> <a href="https://venmo.com/{{ .Site.Params.venmo_url }}" target="_blank">{{ .Site.Params.venmo }}</a>
+                </div>
+                <div class="payment-method">
+                    <strong>PayPal:</strong> <a href="https://paypal.me/{{ .Site.Params.paypal_url }}" target="_blank">{{ .Site.Params.paypal }}</a>
+                </div>
+            </div>
+            <p class="footer-note">These will be listed publicly soon - grab 'em while you can!</p>
+        </div>
+    </footer>
+</body>
+</html>
