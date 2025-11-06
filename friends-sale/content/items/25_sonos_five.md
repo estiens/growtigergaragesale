@@ -3,7 +3,7 @@ title: "Sonos Five"
 price: "$425"
 category: "Audio"
 shipping: true
-image: "/images/sonos-five.jpg"
+image: "images/sonos-five.jpg"
 short_description: "Sonos Five. The big one. Premium wireless speaker for serious music listening. Six drivers of pure audio bliss. Makes you question if Era 100s are really enough (they probably are but...)."
 seller_notes: |
   ## Price

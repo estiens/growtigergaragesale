@@ -3,7 +3,7 @@ title: "Sonos Beam Gen 2"
 price: "$275"
 category: "Audio"
 shipping: true
-image: "/images/sonos-beam-gen2.jpg"
+image: "images/sonos-beam-gen2.jpg"
 short_description: "Sonos Beam Gen 2 with Dolby Atmos. Makes TV sound come from the ceiling. Creates spatial audio illusions. Perfect for pretending you're in a movie theater or different dimension."
 ---
 

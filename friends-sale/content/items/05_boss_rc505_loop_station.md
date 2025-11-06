@@ -3,7 +3,7 @@ title: "Boss RC-505 Loop Station"
 price: "$375"
 category: "Music Gear"
 shipping: true
-image: "/images/boss-rc505.jpg"
+image: "images/boss-rc505.jpg"
 short_description: "Boss RC-505: 5-track loop station for beatboxing, live performance, and creating infinite recursive audio mandalas. Trap yourself in time. Escape linearity. Make sick beats."
 ---
 

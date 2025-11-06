@@ -3,7 +3,7 @@ title: "SodaStream"
 price: "$25"
 category: "Kitchen"
 shipping: false
-image: "/images/sodastream.jpg"
+image: "images/sodastream.jpg"
 short_description: "SodaStream. Turn boring water into exciting bubbles. Make your own soda, feel like a mad scientist, reduce plastic waste, or carbonate things you probably shouldn't."
 seller_notes: |
   ## Price

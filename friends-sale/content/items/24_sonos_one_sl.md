@@ -3,7 +3,7 @@ title: "Sonos One SL"
 price: "$90"
 category: "Audio"
 shipping: true
-image: "/images/sonos-one-sl.jpg"
+image: "images/sonos-one-sl.jpg"
 short_description: "Sonos One SL. Compact speaker without the creepy microphone. Perfect for bathrooms, bedrooms, or anywhere you want good sound without Alexa judging your music choices."
 seller_notes: |
   ## Price

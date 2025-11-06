@@ -3,7 +3,7 @@ title: "Ableton Push 2"
 price: "$350"
 category: "Music Gear"
 shipping: true
-image: "/images/ableton-push-2.jpg"
+image: "images/ableton-push-2.jpg"
 short_description: "Ableton Push 2. Create beats, produce music, or use 64 RGB buttons to communicate with aliens via color-coded light patterns. Built-in display shows your progress toward transcendence."
 ---
 

@@ -3,7 +3,7 @@ title: "Ariel Rider 52V Battery (Grizzly) - Battery 2"
 price: "$350"
 category: "E-Bike Parts"
 shipping: true
-image: "/images/ariel-rider-battery.jpg"
+image: "images/ariel-rider-battery.jpg"
 short_description: "52V Ariel Rider Grizzly battery. Powers e-bikes beautifully. Also suitable for post-apocalyptic bartering, meditation on the nature of stored potential energy, or extremely heavy paperweight."
 ---
 

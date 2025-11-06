@@ -3,7 +3,7 @@ title: "Sonos Sub Mini"
 price: "$325"
 category: "Audio"
 shipping: true
-image: "/images/sonos-sub-mini.jpg"
+image: "images/sonos-sub-mini.jpg"
 short_description: "Sonos Sub Mini. Makes bass go BOOM in compact form. Adds the low-end frequencies your chakras have been craving. Pairs with Sonos or summons earthquakes."
 ---
 

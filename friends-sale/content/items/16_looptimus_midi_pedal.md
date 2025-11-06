@@ -3,7 +3,7 @@ title: "Looptimus MIDI Pedal"
 price: "$175"
 category: "Music Gear"
 shipping: true
-image: "/images/looptimus-pedal.jpg"
+image: "images/looptimus-pedal.jpg"
 short_description: "Looptimus MIDI foot pedal for Boss loop stations. Control loops with your feet while your hands do other things. Essential for beatboxers and anyone who wants to feel like a wizard."
 ---
 

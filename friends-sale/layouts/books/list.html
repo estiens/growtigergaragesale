@@ -26,6 +26,12 @@
         </div>
     </div>
 
+    <div class="view-toggle">
+        <label>View:</label>
+        <button class="view-btn active" data-view="grid">Cards</button>
+        <button class="view-btn" data-view="table">List</button>
+    </div>
+
     <div id="books-list" class="books-grid">
         {{ range .Pages }}
         {{ if and (not .Params.sold) (not .Params.pending) }}
@@ -46,6 +52,33 @@
         {{ end }}
     </div>
 
+    <div id="books-table" class="books-table" style="display: none;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Tags</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ range .Pages }}
+                {{ if and (not .Params.sold) (not .Params.pending) }}
+                <tr class="book-row" data-title="{{ .Title | lower }}" data-author="{{ .Params.author | lower }}" data-category="{{ .Params.category | lower }}" data-tags="{{ .Params.tags | lower }}">
+                    <td class="book-title">{{ .Title }}</td>
+                    <td class="book-author">{{ .Params.author }}</td>
+                    <td class="book-category">{{ .Params.category }}</td>
+                    <td class="book-tags">{{ .Params.tags }}</td>
+                    <td class="book-price">{{ .Params.price }}</td>
+                </tr>
+                {{ end }}
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
+
     <p class="books-note" id="no-results" style="display: none;">No books found matching your search.</p>
 </div>
 
@@ -54,10 +87,12 @@
 const searchInput = document.getElementById('book-search');
 const searchResults = document.getElementById('search-results');
 const allCards = document.querySelectorAll('.book-card');
+const allRows = document.querySelectorAll('.book-row');
 const noResults = document.getElementById('no-results');
 let currentFilter = 'all';
+let currentView = 'grid';
 
-// Build search index
+// Build search index from cards (same data structure used for both views)
 const searchIndex = Array.from(allCards).map(card => ({
     title: card.dataset.title,
     author: card.dataset.author,
@@ -125,10 +160,11 @@ document.addEventListener('click', function(e) {
     }
 });
 
-// Filter books based on search and category
+// Filter books based on search and category (works for both grid and table views)
 function filterBooks(searchQuery, categoryFilter) {
     let visibleCount = 0;
 
+    // Filter cards (grid view)
     allCards.forEach(card => {
         const title = card.dataset.title;
         const author = card.dataset.author;
@@ -151,6 +187,28 @@ function filterBooks(searchQuery, categoryFilter) {
         }
     });
 
+    // Filter rows (table view) - same logic
+    allRows.forEach(row => {
+        const title = row.dataset.title;
+        const author = row.dataset.author;
+        const category = row.dataset.category;
+        const tags = row.dataset.tags;
+
+        const matchesSearch = searchQuery === '' ||
+            title.includes(searchQuery) ||
+            author.includes(searchQuery) ||
+            tags.includes(searchQuery);
+
+        const matchesCategory = categoryFilter === 'all' ||
+            category.toLowerCase().includes(categoryFilter);
+
+        if (matchesSearch && matchesCategory) {
+            row.style.display = '';
+        } else {
+            row.style.display = 'none';
+        }
+    });
+
     // Update count and show/hide no results message
     document.getElementById('book-count').textContent = visibleCount;
     noResults.style.display = visibleCount === 0 ? 'block' : 'none';
@@ -163,6 +221,35 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
         this.classList.add('active');
 
         currentFilter = this.dataset.filter;
+        const searchQuery = searchInput.value.toLowerCase().trim();
+        filterBooks(searchQuery, currentFilter);
+    });
+});
+
+// View toggle functionality
+document.querySelectorAll('.view-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const view = this.dataset.view;
+
+        // Update button states
+        document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        // Toggle views
+        const gridView = document.getElementById('books-list');
+        const tableView = document.getElementById('books-table');
+
+        if (view === 'grid') {
+            gridView.style.display = 'grid';
+            tableView.style.display = 'none';
+            currentView = 'grid';
+        } else {
+            gridView.style.display = 'none';
+            tableView.style.display = 'block';
+            currentView = 'table';
+        }
+
+        // Reapply current filters
         const searchQuery = searchInput.value.toLowerCase().trim();
         filterBooks(searchQuery, currentFilter);
     });

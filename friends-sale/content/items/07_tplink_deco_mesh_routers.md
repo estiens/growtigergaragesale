@@ -3,7 +3,7 @@ title: "TP-Link Deco Mesh Router Sets"
 price: "$150"
 category: "Electronics"
 shipping: true
-image: "/images/tplink-deco.jpg"
+image: "images/tplink-deco.jpg"
 short_description: "TP-Link Deco mesh routers. Blanket your home in Wi-Fi waves. Eliminate dead zones. Create an electromagnetic cocoon. Commune with the internet everywhere."
 ---
 

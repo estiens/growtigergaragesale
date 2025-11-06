@@ -3,7 +3,7 @@ title: "Sonos Beam Gen 1"
 price: "$175"
 category: "Audio"
 shipping: true
-image: "/images/sonos-beam-gen1.jpg"
+image: "images/sonos-beam-gen1.jpg"
 short_description: "Sonos Beam Gen 1. Makes your TV sound less like a tin can. The elder statesman of compact soundbars. Still slaps, just without the fancy Atmos magic."
 ---
 

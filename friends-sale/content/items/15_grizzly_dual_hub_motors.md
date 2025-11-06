@@ -3,7 +3,7 @@ title: "Grizzly Dual Hub Motors"
 price: "$250"
 category: "E-Bike Parts"
 shipping: true
-image: "/images/grizzly-hub-motors.jpg"
+image: "images/grizzly-hub-motors.jpg"
 short_description: "Dual 750W hub motors from Ariel Rider Grizzly. 1500W of raw electric power. Build your dream e-bike, power wheelchair, or questionable homemade hovercraft."
 ---
 

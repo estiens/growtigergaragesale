@@ -3,7 +3,7 @@ title: "Stanton STR8-100 DJ Turntable (1996)"
 price: "$200"
 category: "Music Gear"
 shipping: false
-image: "/images/stanton-turntable.jpg"
+image: "images/stanton-turntable.jpg"
 short_description: "Stanton STR8-100 DJ turntable from 1996. Vintage direct-drive for scratching and mixing. May or may not work - embrace the mystery. Perfect for DJs or optimistic tinkerers."
 seller_notes: |
   ## Price

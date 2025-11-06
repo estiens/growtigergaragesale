@@ -3,7 +3,7 @@ title: "Cricut Maker 3 + Supplies"
 price: "$200"
 category: "Electronics"
 shipping: false
-image: "/images/cricut-maker-3.jpg"
+image: "images/cricut-maker-3.jpg"
 short_description: "Cricut Maker 3 with supplies. Cuts vinyl, paper, fabric. Make crafts, protest signs, or extremely precise paper offerings to the craft gods. Comes with many blades and mysteries."
 ---
 

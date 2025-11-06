@@ -4,7 +4,7 @@ price: "$400"
 category: "Electronics"
 shipping: false
 local_only: true
-image: "/images/lg-ac-unit.jpg"
+image: "images/lg-ac-unit.jpg"
 short_description: "Giant LG window AC with Dual Inverter tech. Cools rooms efficiently. Creates artificial winter. Makes you forget climate change for brief, guilt-tinged moments of comfort."
 ---
 

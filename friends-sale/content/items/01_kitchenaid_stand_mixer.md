@@ -3,7 +3,7 @@ title: "KitchenAid Stand Mixer"
 price: "$175"
 category: "Kitchen"
 shipping: true
-image: "/images/kitchenaid-mixer.jpg"
+image: "images/kitchenaid-mixer.jpg"
 short_description: "Classic KitchenAid stand mixer. Perfect for bread dough, cake batter, kinetic sculpture installations, or as a particularly challenging obstacle course for champion goldfish."
 ---
 

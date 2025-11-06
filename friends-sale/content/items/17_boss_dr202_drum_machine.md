@@ -3,7 +3,7 @@ title: "Boss DR-202 Drum Machine"
 price: "$275"
 category: "Music Gear"
 shipping: true
-image: "/images/boss-dr202.jpg"
+image: "images/boss-dr202.jpg"
 short_description: "Boss DR-202 drum machine from 1998. Makes lo-fi beats that sound like the future imagined by the past. Cult classic groovebox for vintage-obsessed producers and time travelers."
 ---
 

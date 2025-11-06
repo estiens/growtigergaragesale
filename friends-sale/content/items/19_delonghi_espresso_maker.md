@@ -3,7 +3,7 @@ title: "DeLonghi Espresso Maker"
 price: "$125"
 category: "Kitchen"
 shipping: false
-image: "/images/delonghi-espresso.jpg"
+image: "images/delonghi-espresso.jpg"
 short_description: "DeLonghi espresso maker. Transforms beans and water into liquid motivation. Perfect for coffee rituals, cafe cosplay, or pretending you live in Italy."
 seller_notes: |
   ## Price

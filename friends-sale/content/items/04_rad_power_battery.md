@@ -3,7 +3,7 @@ title: "Rad Power 48V Battery (Cargo Bike)"
 price: "$300"
 category: "E-Bike Parts"
 shipping: true
-image: "/images/rad-power-battery.jpg"
+image: "images/rad-power-battery.jpg"
 short_description: "Brand new 48V Rad Power battery. Never used, full of pristine electrons waiting to fulfill their destiny. Powers cargo bikes or existential questions about unused potential."
 ---
 

@@ -3,7 +3,7 @@ title: "Vitamix Blender"
 price: "$225"
 category: "Kitchen"
 shipping: false
-image: "/images/vitamix-blender.jpg"
+image: "images/vitamix-blender.jpg"
 short_description: "Vitamix blender. Pulverizes smoothies, soups, and your attachment to solid food. Powerful enough to question the boundary between liquid and solid states of matter."
 ---
 

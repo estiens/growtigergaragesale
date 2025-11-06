@@ -3,7 +3,7 @@ title: "Pro-Ject Turntable"
 price: "$200"
 category: "Music Gear"
 shipping: false
-image: "/images/project-turntable.jpg"
+image: "images/project-turntable.jpg"
 short_description: "Pro-Ject turntable. Spins vinyl at exactly 33⅓ rpm or serves as a hypnotic meditation device. Watch it rotate. Contemplate impermanence. Enjoy warm analog sound."
 ---
 
