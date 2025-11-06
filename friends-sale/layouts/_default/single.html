@@ -8,13 +8,13 @@
     {{ if .Params.images }}
     <div class="item-images-gallery">
         <div class="main-image">
-            <img id="mainImage" src="{{ index .Params.images 0 | relURL }}" alt="{{ .Title }}">
+            <img id="mainImage" src="{{ index .Params.images 0 | absURL }}" alt="{{ .Title }}">
         </div>
         {{ if gt (len .Params.images) 1 }}
         <div class="thumbnail-grid">
             {{ range $index, $img := .Params.images }}
-            <div class="thumbnail {{ if eq $index 0 }}active{{ end }}" onclick="changeImage('{{ $img | relURL }}', this)">
-                <img src="{{ $img | relURL }}" alt="{{ $.Title }} - Image {{ add $index 1 }}">
+            <div class="thumbnail {{ if eq $index 0 }}active{{ end }}" onclick="changeImage('{{ $img | absURL }}', this)">
+                <img src="{{ $img | absURL }}" alt="{{ $.Title }} - Image {{ add $index 1 }}">
             </div>
             {{ end }}
         </div>
@@ -29,7 +29,7 @@
     </div>
     {{ else if .Params.image }}
     <div class="item-image">
-        <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+        <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
     </div>
     {{ end }}
 

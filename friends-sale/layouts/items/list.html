@@ -18,7 +18,7 @@
         {{ range .Pages }}
         <div class="item-card" data-priority="{{ .Params.priority }}" data-shipping="{{ if .Params.shipping }}yes{{ else }}no{{ end }}" data-local="{{ if .Params.local_only }}yes{{ else }}no{{ end }}">
             {{ if .Params.image }}
-            <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy">
+            <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" loading="lazy">
             {{ else }}
             <div class="item-placeholder">[Photo Coming]</div>
             {{ end }}
