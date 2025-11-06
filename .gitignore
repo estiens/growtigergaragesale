@@ -1,0 +1,14 @@
+# Claude AI assistant directory
+.claude/
+
+# Python scripts
+*.py
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.swp
+*.swo
+*~
