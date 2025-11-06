@@ -1,11 +1,11 @@
 ---
 title: "Bachetta Giro Recumbent Bike"
-price: "$1200"
+price: "$1000"
 category: "Other"
 shipping: false
 local_only: true
 image: "images/recumbent-bike.jpg"
-short_description: "Bachetta Giro recumbent bike. Ride in comfort like you're in a La-Z-Boy on wheels. Hasn't been ridden in 15 years - perfect for someone ready to resurrect a legend."
+short_description: "Bachetta Giro recumbent bike (needs new chain, front wheel, frame/cassette excellent cond). Ride in comfort like you're in a La-Z-Boy on wheels. Hasn't been ridden in 15 years - perfect for someone ready to resurrect a legend."
 ---
 
   ## Description

@@ -1,6 +1,6 @@
 ---
 title: "Ableton Push 2"
-price: "$350"
+price: "$325"
 category: "Music Gear"
 shipping: true
 image: "images/ableton-push-2.jpg"
