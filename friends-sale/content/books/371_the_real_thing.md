@@ -1,7 +1,7 @@
 ---
 title: "The Real Thing"
 author: "Tom Stoppard"
-category: "Other"
+category: "Drama"
 tags: "Theater/Play"
 price: "$3"
 sold: false

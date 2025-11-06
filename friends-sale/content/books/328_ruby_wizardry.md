@@ -1,7 +1,7 @@
 ---
 title: "Ruby Wizardry"
 author: "Weinstein"
-category: "Other"
+category: "Programming"
 tags: "Programming/Ruby"
 price: "$3"
 sold: false

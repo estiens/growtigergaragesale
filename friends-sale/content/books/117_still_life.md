@@ -1,7 +1,7 @@
 ---
 title: "Still Life"
 author: "Mann"
-category: "Other"
+category: "Drama"
 tags: "Play"
 price: "$3"
 sold: false

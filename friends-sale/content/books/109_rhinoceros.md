@@ -1,7 +1,7 @@
 ---
 title: "Rhinoceros"
 author: "Eugene Ionesco"
-category: "Other"
+category: "Drama"
 tags: "Play"
 price: "$3"
 sold: false

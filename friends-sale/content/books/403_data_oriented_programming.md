@@ -1,7 +1,7 @@
 ---
 title: "Data-Oriented Programming"
 author: "Yehonathan Sharvit"
-category: "Other"
+category: "Programming"
 tags: "Programming/Functional"
 price: "$5"
 sold: false

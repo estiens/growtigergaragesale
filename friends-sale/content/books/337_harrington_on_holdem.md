@@ -1,7 +1,7 @@
 ---
 title: "Harrington on Hold'em"
 author: "Harrington & Robertie"
-category: "Other"
+category: "Poker"
 tags: "Poker/Tournaments"
 price: "$5"
 sold: false

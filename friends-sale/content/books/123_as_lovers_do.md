@@ -1,7 +1,7 @@
 ---
 title: "As Lovers Do"
 author: "Marc Bénéteau"
-category: "Other"
+category: "Drama"
 tags: "Play"
 price: "$3"
 sold: false

@@ -1,7 +1,7 @@
 ---
 title: "Humana Festival 2000"
 author: "Various"
-category: "Other"
+category: "Drama"
 tags: "Theater/Anthology"
 price: "$3"
 sold: false

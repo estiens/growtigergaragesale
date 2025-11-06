@@ -1,7 +1,7 @@
 ---
 title: "Broadway Play"
 author: "Eric Overmyer"
-category: "Other"
+category: "Drama"
 tags: "Theater/Plays"
 price: "$3"
 sold: false

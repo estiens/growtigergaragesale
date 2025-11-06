@@ -1,7 +1,7 @@
 ---
 title: "Cloud Tectonics"
 author: "José Rivera"
-category: "Other"
+category: "Drama"
 tags: "Theater/Play"
 price: "$3"
 sold: false

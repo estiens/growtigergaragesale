@@ -1,7 +1,7 @@
 ---
 title: "Burn This"
 author: "Lanford Wilson"
-category: "Other"
+category: "Drama"
 tags: "Play"
 price: "$3"
 sold: false

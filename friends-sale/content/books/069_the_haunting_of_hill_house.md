@@ -1,7 +1,7 @@
 ---
 title: "The Haunting of Hill House"
 author: "Shirley Jackson"
-category: "Other"
+category: "Fiction"
 tags: "Horror/Gothic"
 price: "$3"
 sold: false

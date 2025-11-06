@@ -1,7 +1,7 @@
 ---
 title: "Ruby for Rails"
 author: "David A. Black"
-category: "Other"
+category: "Programming"
 tags: "Programming/Ruby"
 price: "$3"
 sold: false

@@ -1,7 +1,7 @@
 ---
 title: "Closer"
 author: "Patrick Marber"
-category: "Other"
+category: "Drama"
 tags: "Play"
 price: "$3"
 sold: false

@@ -1,7 +1,7 @@
 ---
 title: "Code as Creative Medium"
 author: "Levin & Brain"
-category: "Other"
+category: "Programming"
 tags: "Art/Programming"
 price: "$5"
 sold: false

@@ -1,7 +1,7 @@
 ---
 title: "Angels in America"
 author: "Tony Kushner"
-category: "Other"
+category: "Drama"
 tags: "Play"
 price: "$5"
 sold: false

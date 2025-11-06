@@ -1,7 +1,7 @@
 ---
 title: "House of Leaves"
 author: "Mark Z. Danielewski"
-category: "Other"
+category: "Fiction"
 tags: "Experimental/Horror"
 price: "$5"
 sold: false

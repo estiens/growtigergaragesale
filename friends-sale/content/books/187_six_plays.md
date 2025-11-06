@@ -1,7 +1,7 @@
 ---
 title: "Six Plays"
 author: "Richard Foreman"
-category: "Other"
+category: "Drama"
 tags: "Play"
 price: "$3"
 sold: false

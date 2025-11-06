@@ -1,7 +1,7 @@
 ---
 title: "Ruby Phrasebook"
 author: "Various"
-category: "Other"
+category: "Programming"
 tags: "Programming/Reference"
 price: "$2"
 sold: false

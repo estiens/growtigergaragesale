@@ -1,7 +1,7 @@
 ---
 title: "Kill Phil"
 author: "Various"
-category: "Other"
+category: "Poker"
 tags: "Poker/Tournaments"
 price: "$3"
 sold: false

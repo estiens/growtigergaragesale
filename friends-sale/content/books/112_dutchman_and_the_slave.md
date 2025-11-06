@@ -1,7 +1,7 @@
 ---
 title: "Dutchman and The Slave"
 author: "LeRoi Jones"
-category: "Other"
+category: "Drama"
 tags: "Play"
 price: "$3"
 sold: false

@@ -1,7 +1,7 @@
 ---
 title: "Two Plays"
 author: "Bertolt Brecht"
-category: "Other"
+category: "Drama"
 tags: "Theater/Plays"
 price: "$3"
 sold: false

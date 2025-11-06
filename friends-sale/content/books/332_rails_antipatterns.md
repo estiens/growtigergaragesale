@@ -1,7 +1,7 @@
 ---
 title: "Rails Antipatterns"
 author: "Pytel & Saleh"
-category: "Other"
+category: "Programming"
 tags: "Programming/Rails"
 price: "$3"
 sold: false

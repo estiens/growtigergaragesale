@@ -1,7 +1,7 @@
 ---
 title: "Practical Object-Oriented Design in Ruby"
 author: "Sandi Metz"
-category: "Other"
+category: "Programming"
 tags: "Programming/Ruby"
 price: "$5"
 sold: false

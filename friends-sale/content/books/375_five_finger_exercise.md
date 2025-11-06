@@ -1,7 +1,7 @@
 ---
 title: "Five Finger Exercise"
 author: "Peter Shaffer"
-category: "Other"
+category: "Drama"
 tags: "Theater/Play"
 price: "$3"
 sold: false

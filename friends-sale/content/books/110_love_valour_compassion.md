@@ -1,7 +1,7 @@
 ---
 title: "Love! Valour! Compassion!"
 author: "Terrence McNally"
-category: "Other"
+category: "Drama"
 tags: "Play"
 price: "$3"
 sold: false

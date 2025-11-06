@@ -1,7 +1,7 @@
 ---
 title: "Ruby Under a Microscope"
 author: "Pat Shaughnessy"
-category: "Other"
+category: "Programming"
 tags: "Programming/Ruby"
 price: "$5"
 sold: false

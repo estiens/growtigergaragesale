@@ -1,7 +1,7 @@
 ---
 title: "Weighing the Odds in Hold'em Poker"
 author: "King Yao"
-category: "Other"
+category: "Poker"
 tags: "Poker/Strategy"
 price: "$3"
 sold: false

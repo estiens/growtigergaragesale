@@ -1,7 +1,7 @@
 ---
 title: "A Bright Room Called Day"
 author: "Tony Kushner"
-category: "Other"
+category: "Drama"
 tags: "Play"
 price: "$3"
 sold: false

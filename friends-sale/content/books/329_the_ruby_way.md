@@ -1,7 +1,7 @@
 ---
 title: "The Ruby Way"
 author: "Hal Fulton"
-category: "Other"
+category: "Programming"
 tags: "Programming/Ruby"
 price: "$3"
 sold: false

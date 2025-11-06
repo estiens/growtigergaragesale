@@ -1,7 +1,7 @@
 ---
 title: "A Book on C"
 author: "Kelley Pohl"
-category: "Other"
+category: "Programming"
 tags: "Programming/C"
 price: "$3"
 sold: false

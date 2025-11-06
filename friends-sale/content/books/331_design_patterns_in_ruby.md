@@ -1,7 +1,7 @@
 ---
 title: "Design Patterns in Ruby"
 author: "Russ Olsen"
-category: "Other"
+category: "Programming"
 tags: "Programming/Ruby"
 price: "$5"
 sold: false

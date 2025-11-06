@@ -1,7 +1,7 @@
 ---
 title: "The Road to Mecca"
 author: "Athol Fugard"
-category: "Other"
+category: "Drama"
 tags: "Play"
 price: "$3"
 sold: false

@@ -1,7 +1,7 @@
 ---
 title: "More Ten-Minute Plays from Actors Theatre of Louisville"
 author: "Various"
-category: "Other"
+category: "Drama"
 tags: "Play"
 price: "$3"
 sold: false

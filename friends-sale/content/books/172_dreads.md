@@ -1,6 +1,6 @@
 ---
 title: "Dreads"
-author: "Brian Froud"
+author: "anon"
 category: "Sci-Fi/Fantasy"
 tags: "Art/Fantasy"
 price: "$3"

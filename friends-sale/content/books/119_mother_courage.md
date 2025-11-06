@@ -1,7 +1,7 @@
 ---
 title: "Mother Courage"
 author: "Bertolt Brecht"
-category: "Other"
+category: "Drama"
 tags: "Play"
 price: "$3"
 sold: false

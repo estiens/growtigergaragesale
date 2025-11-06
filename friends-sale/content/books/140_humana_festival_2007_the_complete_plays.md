@@ -1,7 +1,7 @@
 ---
 title: "Humana Festival 2007: The Complete Plays"
 author: "Edited by Hansel & Dubiner"
-category: "Other"
+category: "Drama"
 tags: "Play"
 price: "$3"
 sold: false

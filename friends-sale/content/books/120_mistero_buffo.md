@@ -1,7 +1,7 @@
 ---
 title: "Mistero Buffo"
 author: "Dario Fo"
-category: "Other"
+category: "Drama"
 tags: "Play"
 price: "$3"
 sold: false

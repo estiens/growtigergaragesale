@@ -1,7 +1,7 @@
 ---
 title: "Grokking Simplicity"
 author: "Eric Normand"
-category: "Other"
+category: "Programming"
 tags: "Programming/Functional"
 price: "$3"
 sold: false
