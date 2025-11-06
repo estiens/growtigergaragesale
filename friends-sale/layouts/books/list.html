@@ -28,8 +28,10 @@
 
     <div class="view-toggle">
         <label>View:</label>
-        <button class="view-btn active" data-view="grid">Cards</button>
-        <button class="view-btn" data-view="table">List</button>
+        <div class="view-buttons">
+            <button class="view-btn active" data-view="grid">Cards</button>
+            <button class="view-btn" data-view="table">List</button>
+        </div>
     </div>
 
     <div id="books-list" class="books-grid">
@@ -56,17 +58,17 @@
         <table>
             <thead>
                 <tr>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>Category</th>
-                    <th>Tags</th>
-                    <th>Price</th>
+                    <th class="sortable" data-column="title">Title <span class="sort-indicator"></span></th>
+                    <th class="sortable" data-column="author">Author <span class="sort-indicator"></span></th>
+                    <th class="sortable" data-column="category">Category <span class="sort-indicator"></span></th>
+                    <th class="sortable" data-column="tags">Tags <span class="sort-indicator"></span></th>
+                    <th class="sortable" data-column="price">Price <span class="sort-indicator"></span></th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="table-body">
                 {{ range .Pages }}
                 {{ if and (not .Params.sold) (not .Params.pending) }}
-                <tr class="book-row" data-title="{{ .Title | lower }}" data-author="{{ .Params.author | lower }}" data-category="{{ .Params.category | lower }}" data-tags="{{ .Params.tags | lower }}">
+                <tr class="book-row" data-title="{{ .Title | lower }}" data-author="{{ .Params.author | lower }}" data-category="{{ .Params.category | lower }}" data-tags="{{ .Params.tags | lower }}" data-price="{{ .Params.price }}">
                     <td class="book-title">{{ .Title }}</td>
                     <td class="book-author">{{ .Params.author }}</td>
                     <td class="book-category">{{ .Params.category }}</td>
@@ -254,5 +256,60 @@ document.querySelectorAll('.view-btn').forEach(btn => {
         filterBooks(searchQuery, currentFilter);
     });
 });
+
+// Table sorting functionality
+let currentSort = { column: null, direction: 'asc' };
+
+document.querySelectorAll('.sortable').forEach(header => {
+    header.addEventListener('click', function() {
+        const column = this.dataset.column;
+
+        // Toggle sort direction
+        if (currentSort.column === column) {
+            currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+        } else {
+            currentSort.column = column;
+            currentSort.direction = 'asc';
+        }
+
+        // Update header styles
+        document.querySelectorAll('.sortable').forEach(h => {
+            h.classList.remove('sort-asc', 'sort-desc');
+        });
+        this.classList.add('sort-' + currentSort.direction);
+
+        // Sort the table
+        sortTable(column, currentSort.direction);
+    });
+});
+
+function sortTable(column, direction) {
+    const tbody = document.getElementById('table-body');
+    const rows = Array.from(tbody.querySelectorAll('.book-row'));
+
+    rows.sort((a, b) => {
+        let aVal = a.dataset[column] || '';
+        let bVal = b.dataset[column] || '';
+
+        // Special handling for price column
+        if (column === 'price') {
+            // Extract numeric value from price string (e.g., "$3" -> 3)
+            aVal = parseFloat(aVal.replace(/[^0-9.]/g, '')) || 0;
+            bVal = parseFloat(bVal.replace(/[^0-9.]/g, '')) || 0;
+
+            return direction === 'asc' ? aVal - bVal : bVal - aVal;
+        }
+
+        // String comparison for other columns
+        if (direction === 'asc') {
+            return aVal.localeCompare(bVal);
+        } else {
+            return bVal.localeCompare(aVal);
+        }
+    });
+
+    // Re-append rows in sorted order
+    rows.forEach(row => tbody.appendChild(row));
+}
 </script>
 {{ end }}
